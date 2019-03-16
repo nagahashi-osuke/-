@@ -5,7 +5,6 @@ header("Content-type: text/html; charset=euc-jp");
 <html lang="ja">
 
 <head>
-<title>僕らの平和の鐘プロジェクトOurPeaceBellProject</title>
 <meta HTTP-EQUIV="keyword" CONTENT="僕らの平和の鐘プロジェクト" "平和" "平和の鐘" "僕らの平和の鐘" "ourpeacebell" "長橋桜介" "募金" "ボランティア">
 <meta NAME="description" CONTENT="貧困や紛争、自然災害、人道危機などで苦しむ子どもたちのための支援金を募るものです。
 毎年国際平和デー(9/21)の前後１週間に期間限定で同人誌『平和の鐘』を一冊1000円～でBOOTHにてダウンロード販売致します。
