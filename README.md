@@ -17,9 +17,9 @@ header("Content-type: text/html; charset=euc-jp");
 <body>
 <body bgcolor="#ffffff">
 <center><img src="ロゴ３.png"></center>
-<center><img src="募集.png"></center><br>
+<center><img src="募集.PNG"></center><br>
 <h1><ruby><font face="刻明朝 Regular">僕らの<font color="#999900"><font face="祥南行書体">平和の鐘</font></font>プロジェクト<rt><font face="刻明朝 Regular">Our <font color="#999900"><font face="祥南行書体">Peace Bell</font></font> Project</font></rt></ruby></font></h1>
-<center><img src="ポスター.png"></center><br>
+<center><img src="ポスター.PNG"></center><br>
 <p1>貧困や紛争、自然災害、人道危機などで苦しむ子どもたちのための支援金を募るものです。<br>
 毎年国際平和デー(9/21)の前後１週間に期間限定で同人誌『平和の鐘』を一冊500円～でBOOTHにてダウンロード販売致します。<br>
 このプロジェクトは全て無償で動き、収益金は全額<ruby>UNICEF<rt>ユニセフ</rt></ruby>(国際連合児童基金)へ渡ります。</p1><br>
