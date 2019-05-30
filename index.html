@@ -1,4 +1,4 @@
-﻿<?
+<?
 header("Content-type: text/html; charset=euc-jp");
 ?>
 <!DOCTYPE html>
@@ -6,40 +6,173 @@ header("Content-type: text/html; charset=euc-jp");
 
 <head>
 <title>僕らの平和の鐘プロジェクトOurPeaceBellProject</title>
-<meta HTTP-EQUIV="keyword" CONTENT="僕らの平和の鐘プロジェクト" "平和" "平和の鐘" "僕らの平和の鐘" "ourpeacebell" "長橋桜介" "募金" "ボランティア">
+<meta HTTP-EQUIV="keyword" CONTENT="僕らの平和の鐘" CONTENT="平和" CONTENT="平和の鐘" CONTENT="ourpeacebell" CONTENT="長橋桜介" CONTENT="募金" CONTENT="ボランティア">
 <meta NAME="description" CONTENT="貧困や紛争、自然災害、人道危機などで苦しむ子どもたちのための支援金を募るものです。
-毎年国際平和デー(9/21)の前後１週間に期間限定で同人誌『平和の鐘』を一冊1000円～でBOOTHにてダウンロード販売致します。
+毎年国際平和デー(9/21)の前後１週間に期間限定で同人誌『平和の鐘』を一冊500円でBOOTHにてダウンロード販売致します。
 このプロジェクトは全て無償で動き、収益金は全額UNICEFユニセフ(国際連合児童基金)へ渡ります。">
 <meta NAME="author" CONTENT="長橋桜介">
 <meta charset="utf-8">
+
+<style>
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+/* リスト全体 */
+ul
+   {
+    width:450px;          /* リスト全体の幅 */
+    height:35px;          /* リスト全体の高さ */
+    list-style:none;      /* リストマークを無しにする */
+    text-align:center;    /* 文字を中央 */
+    font-size:130%;       /* 文字を大きく */
+    font-weight:bold;     /* 文字を太く */
+    line-height:150%;     /* 行の高さを調整 */
+    margin:80px;
+   }
+
+/* 各項目 */
+li
+   {
+    width:150px;          /* 項目の幅 */
+    height:35px;          /* 項目の高さ */
+    float:left;           /* 各項目を左側から回り込み */
+   }
+
+/* リンク部分 */
+li a
+   {
+    display:block;          /* リンク範囲をブロックに変換 */
+    width:100%;             /* リンク範囲（幅）をリスト項目範囲全て */
+    height:100%;            /* リンク範囲（高さ）をリスト項目範囲全て */
+    background-image:url(画像１.gif);     /* リンク範囲の背景画像設定 */
+    background-repeat:no-repeat;      /* 背景画像繰り返し表示しない */
+    color:#ffffff;                    /* リンク文字色 */
+   }
+
+li a:link
+   {color:#ffffff;}                 /* まだ見ていないリンク色 */
+
+li a:visited
+   {color:#ffffff;}                 /* 既に見たリンク色 */
+ 
+li a:hover
+   {
+    background-image:url(画像２.gif);   /* マウスが上に来た時の背景画像設定 */
+    color:#4a494a;                  /* マウスが上に来た時の文字色 */
+   }
+
+/* リンク部分 */
+gazo
+   {display:none;}                  /* 画像２を表示しない */
+
+ul {max-width : 100% ;
+height : auto ;}
+
+img{
+max-width : 100% ;
+height : auto ;
+}
+
+iframe { width : 100% ; }
+
+div{margin:120px;
+max-width : 100% ;
+height : auto ;
+}
+blockquote{margin:-10px;
+  font-size:30px;
+  }
+
+body { -webkit-text-size-adjust : 100% ;
+}
+
+@media screen and (max-width: 480px) {
+
+p {
+width : 100% ;
+font-size : 65% ;
+margin : 0 0 1.8em 0 ;
+line-height : 1.7 ; }
+ul{margin:-30px;
+margin-top:0px;
+}
+img{width:80%;
+height:80%;
+   margin-left:0px;
+}
+div img{margin:0px;
+max-width : 100% ;
+height : auto ;
+}
+blockquote{margin:0px;
+font-size:90%;
+}
+
+}    
+</style>
 </head>
 
-<body>
-<body bgcolor="#ffffff">
-<center><img src="ロゴ３.png"></center>
-<center><img src="募集.PNG"></center><br>
-<h1><ruby><font face="刻明朝 Regular">僕らの<font color="#999900"><font face="祥南行書体">平和の鐘</font></font>プロジェクト<rt><font face="刻明朝 Regular">Our <font color="#999900"><font face="祥南行書体">Peace Bell</font></font> Project</font></rt></ruby></font></h1>
-<center><img src="ポスター.PNG"></center><br>
-<p1>貧困や紛争、自然災害、人道危機などで苦しむ子どもたちのための支援金を募るものです。<br>
-毎年国際平和デー(9/21)の前後１週間に期間限定で同人誌『平和の鐘』を一冊500円～でBOOTHにてダウンロード販売致します。<br>
-このプロジェクトは全て無償で動き、収益金は全額<ruby>UNICEF<rt>ユニセフ</rt></ruby>(国際連合児童基金)へ渡ります。</p1><br>
+<body bgcolor="ffffff">
+
+<center><img src="ロゴ３.png" alt="僕らの平和の鐘プロジェクトのロゴ。"></center>
+<center><img src="募集.png" alt="『平和の鐘１』掲載作品募集。６月１日から８月１５日まで"></center>
+<br>
+<ul>
+<li><a href="サイトトップ.html">TOP</a>
+<small><li><a href="募集要項.html">募集要項</a>
+<small><li><a href="ユニセフchallenge.html">UNICEFチャレンジ</a></small></small>
+<li><a href="ご挨拶.html">ご挨拶</a>
+<li><a href="https://nagahashi.booth.pm/">販売</a>
+</ul>
+<br>
+<center>
+<img class="pc" src="サイト画像1.PNG" alt="貧困や紛争、自然災害、人道危機などで苦しむ子どもたちのための支援金を募るプロジェクトです。毎年国際平和デーの前後１週間(9/14-28)に期間限定で公募した作品の同人誌『平和の鐘』を一冊500円でBOOTHにてダウンロード販売致します。このプロジェクトは全て無償で動き、収益金は全額UNICEFへ渡ります。">
+<img class="sp" src="サイト画像1.5.PNG" alt="貧困や紛争、自然災害、人道危機などで苦しむ子どもたちのための支援金を募るプロジェクトです。毎年国際平和デーの前後１週間(9/14-28)に期間限定で公募した作品の同人誌『平和の鐘』を一冊500円でBOOTHにてダウンロード販売致します。このプロジェクトは全て無償で動き、収益金は全額UNICEFへ渡ります。">
+</center>
 <br>
 <br>
-<p2><b>『平和の鐘１』掲載作品応募要項</b></p2><br>
-<p3>応募方法:私のDM、又はメールまで<br>
-募集作品対象:データで送付可能な全ての作品<br>
-テーマ:「平和」「募金」「子どもの笑顔」のいずれか<br>
-募集期間:6月1日(木)〜8月15日(木)<br>
 <br>
-巻末の参加者名簿に記載しますので、(参加名義、連絡先アカウント１つ)もよろしければお伝えください。<br>
-一名義につき、一ページまでです。複数名義をお持ちでしたら、複数ページ分応募可です。<br>
-Twitterなどで参加表明して呼びかけていただけると大変助かります。<br>
-<u>公式ハッシュタグ</u>　<a href="https://twitter.com/search?q=%23%E5%83%95%E3%82%89%E3%81%AE%E5%B9%B3%E5%92%8C%E3%81%AE%E9%90%98&src=typd">#僕らの平和の鐘</a>　<a href="https://twitter.com/search?f=tweets&q=%23OurPeaceBell&src=typd">#OurPeaceBell</a>　<font color="#555555">(クリックでTwitterに飛びます)</font></p3><br>
 <br>
-<p4>注意事項:未発表作品に限ります。
-二次創作やカバー等に関しては権利の問題を考慮すること。<br>
-(曲のカバーであれば、youtubeの限定公開でリンクを掲載し、その際は私のチャンネルで投稿し、収益発生時は同じく献金させていただきます。)<br>
-テーマから大きく外れている作品等に関しては説明を要求し、掲載をご遠慮させていただく場合がございますので、ご注意ください。</p4><br>
+<br>
+<br>
+<center>
+<img class="pc" src="サイト画像2.PNG" alt="どうか、ひとりひとりが苦しむ人にできることを考えてみてほしいのです。そして、あなたのその手で筆で作品で、平和に子どもたちの笑顔に向けて、人々の心の舵を切らせてほしいのです。  どうかご協力願います。その形は募金でも、『平和の鐘』の購入でも、作品の応募でも、拡散でも、宣伝でもどんなものであっても、子どもたちの笑顔を作ることのできるものだと思います。">
+<img class="sp" src="サイト画像2.5.PNG" alt="どうか、ひとりひとりが苦しむ人にできることを考えてみてほしいのです。そして、あなたのその手で筆で作品で、平和に子どもたちの笑顔に向けて、人々の心の舵を切らせてほしいのです。  どうかご協力願います。その形は募金でも、『平和の鐘』の購入でも、作品の応募でも、拡散でも、宣伝でもどんなものであっても、子どもたちの笑顔を作ることのできるものだと思います。"
+</center></dl>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><img src="サイト画像3.PNG" alt=『平和の鐘１』掲載作品募集。６月１日から８月１５日まで></center>
+   <div style="border:solid 0px; height:360px; width:1400px; overflow:auto; white-space:nowrap;">
+
+      <img src="ポスター3.png" alt="画像01" width="600" height="720">
+      <img src="表紙2.png" alt="画像02" width="240" height="300">
+      <img src="画像パス" alt="画像03" width="600" height="720">
+      <img src="画像パス" alt="画像04" width="600" height="720">
+      <img src="画像パス" alt="画像05" width="600" height="720">
+      <img src="画像パス" alt="画像06" width="600" height="720">
+      <img src="画像パス" alt="画像07" width="600" height="720">
+      <img src="画像パス" alt="画像08" width="600" height="720">
+      <img src="画像パス" alt="画像09" width="600" height="720">
+      <img src="画像パス" alt="画像10" width="600" height="720">
+      
+      </div></blockquote>
 <br>
 <br>
 <br>
@@ -49,11 +182,11 @@ Twitterなどで参加表明して呼びかけていただけると大変助か�
 <br>
 <center>連絡先：<a href="https://twitter.com/nagahashi_osuke">Twitter</a>、メール nagahashi.osuke.mail@gmail.com<br>
 HP：<a href="https://nagahashiosuke.wixsite.com/-site">桜の虹シロップ</a><br>
-BOOTH：<a href="https://manage.booth.pm/">桜の虹ショップ</a></center><br>
+BOOTH：<a href="https://nagahashi.booth.pm/">桜の虹ショップ</a></center><br>
 <br>
 <br>
 <br>
-</body>
+<center><font color="777777">©2019 by長橋桜介</font></center>
 
-<center><font color="#777777">©2019 by長橋桜介</font></center>
+</body>
 </html>
