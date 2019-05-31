@@ -13,18 +13,15 @@ header("Content-type: text/html; charset=euc-jp");
 <meta NAME="author" CONTENT="長橋桜介">
 <meta charset="utf-8">
 
-<script type="text/javascript"> 
-var ua = navigator.userAgent;
-if(ua.indexOf('iPhone') != -1 || ua.indexOf('Android') != -1){
-//iPhone & Android
-document.write('<link rel="stylesheet" href="style_mb.css">');
-}else{
-//PC
-document.write('<link rel="stylesheet" href="style.css">');
-}
-</script>
-
 <style>
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
 /* リスト全体 */
 ul
    {
@@ -37,7 +34,6 @@ ul
     line-height:150%;     /* 行の高さを調整 */
     margin:80px;
    }
-
 /* 各項目 */
 li
    {
@@ -45,7 +41,6 @@ li
     height:35px;          /* 項目の高さ */
     float:left;           /* 各項目を左側から回り込み */
    }
-
 /* リンク部分 */
 li a
    {
@@ -56,10 +51,8 @@ li a
     background-repeat:no-repeat;      /* 背景画像繰り返し表示しない */
     color:#ffffff;                    /* リンク文字色 */
    }
-
 li a:link
    {color:#ffffff;}                 /* まだ見ていないリンク色 */
-
 li a:visited
    {color:#ffffff;}                 /* 既に見たリンク色 */
  
@@ -68,49 +61,45 @@ li a:hover
     background-image:url(画像２.gif);   /* マウスが上に来た時の背景画像設定 */
     color:#4a494a;                  /* マウスが上に来た時の文字色 */
    }
-
 /* リンク部分 */
 gazo
    {display:none;}                  /* 画像２を表示しない */
-
 ul {max-width : 100% ;
 height : auto ;}
-
 img{
 max-width : 100% ;
 height : auto ;
 }
-
 iframe { width : 100% ; }
-
 div{margin:120px;
 max-width : 100% ;
 height : auto ;
 }
-dl {margin:120px;
-}
 blockquote{margin:-10px;
   font-size:30px;
   }
-
 body { -webkit-text-size-adjust : 100% ;
 }
-
 @media screen and (max-width: 480px) {
 p {
 width : 100% ;
 font-size : 65% ;
 margin : 0 0 1.8em 0 ;
 line-height : 1.7 ; }
-ul{margin:0px}
-div{margin:0px;}
-dl{margin:0px;}
+ul{margin:-30px;
+margin-top:0px;
+}
+img{width:80%;
+height:80%;
+   margin-left:0px;
+}
 blockquote{margin:0px;
 font-size:90%;
 }
 }    
 </style>
 </head>
+
 
 <body bgcolor="ffffff">
 
